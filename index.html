@@ -227,7 +227,7 @@ let b = prompt('Фамилия');
 let c = prompt('Возраст');
 alert(`Добрый вечер ${a} ${b}! Мои поздравления, Вам ${c}`);
 */
-
+/*
 let a = +prompt('');
 let b = +prompt('');
 let c = +prompt('');
@@ -251,6 +251,36 @@ let c = +prompt('');
             console.log(c, b, a);
         }
     }
+*/
+
+let color = prompt ('цвет светофора? - красный/желтый/зеленый')
+let isRoadCar = prompt ('машины на дороге есть? - да/нет')
+
+if (color === 'красный') {
+    if (isRoadCar === 'да'){
+        console.log('стой и жди');
+    }else{
+        console.log('всеравно стой');
+    }
+    
+}else if (color === 'желтый') {
+    if (isRoadCar === 'да'){
+        console.log('жди');
+    }else{
+        console.log('всеравно жди');
+    }
+}else if (color === 'зеленый'){
+    if (isRoadCar === 'да'){
+        console.log('подожди пока нарушители проедут');
+    }else{
+        console.log('можно идти');
+    }
+    
+} else {
+    console.log('попробуй еще раз');
+    
+}
+
 
     
 
