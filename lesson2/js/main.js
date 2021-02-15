@@ -128,15 +128,15 @@ console.log(mass);*/
 
 /*Відтворити роботу годинника, відрахувавши 2 хвилини (2 цикли! 1й - хвилини, 2й - секунди)
 - Відтворити роботу годинника, відрахувавши  2 години  (3 цикли! 1й - години, 2й - хвилини, 3й - секунди)*/
-/*for (let i = 0; i < 2; i++) {
-    for (let o = 0; o < 60; o++) {
-        console.log(i, o);
+/*for (let h = 0; h < 2; h++) {
+    for (let m = 0; m < 60; m++) {
+        console.log('hour :', h, 'min :', m);
     }
 }*/
-/*for (let i = 0; i < 2; i++) {
-    for (let o = 0; o < 60; o++) {
-        for (let p = 0; p < 60; p++) {
-            console.log(i, o, p)
+/*for (let h = 0; h < 2; h++) {
+    for (let m = 0; m < 60; m++) {
+        for (let s = 0; s < 60; s++) {
+            console.log('hour :', h, 'min :', m, 'sek :', s);
         }
     }
 }*/
@@ -393,3 +393,11 @@ console.log(mass2);*/
 
 /*4 створити масив з будь якими значеннями (стрінги, числа, і тд...). пройтись по ньому, і якщо об'єкт є числом,
  додати його в інший масив.*/
+
+/*let combo = ['idea', false, 234, true, 'identity', 'imagine', 426, 345, true, 12];
+let number = [];
+console.log(combo);
+for (let i = 0; i < combo.length; i++) {
+    typeof combo[i] === 'number' ? number.push(combo[i]) : "";
+}
+console.log(number);*/
