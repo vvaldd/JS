@@ -128,14 +128,17 @@ console.log(mass);*/
 
 /*Відтворити роботу годинника, відрахувавши 2 хвилини (2 цикли! 1й - хвилини, 2й - секунди)
 - Відтворити роботу годинника, відрахувавши  2 години  (3 цикли! 1й - години, 2й - хвилини, 3й - секунди)*/
-/*for (let h = 0; h < 2; h++) {
-    for (let m = 0; m < 60; m++) {
-        console.log('hour :', h, 'min :', m);
+/*for (let m = 0; m <= 2 ; m++) {
+    for (let s= 0; s < 60; s++) {
+        if(m == 2 && s == 1) break;
+        console.log('min :', m, 'sek :', s);
     }
 }*/
-/*for (let h = 0; h < 2; h++) {
+/*for (let h = 0; h <= 2; h++) {
     for (let m = 0; m < 60; m++) {
+        if(h == 2 && m == 21) break;
         for (let s = 0; s < 60; s++) {
+            if(m == 20 && s == 01) break;
             console.log('hour :', h, 'min :', m, 'sek :', s);
         }
     }
@@ -146,13 +149,13 @@ console.log(mass);*/
 - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for of зібрати всі букви в слово.
 - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for of зібрати всі букви в слово.*/
 /*let mass = [ 'a', 'b', 'c'];
-let mass2 = [];
+let mass2 = "";
 for (let i = 0; i < mass.length; i++) {
     mass2 = mass2 + mass[i];
 }
 console.log(mass2);*/
 /*let mass = [ 'a', 'b', 'c'];
-let mass2 = [];
+let mass2 = "";
 let i = 0;
 while (i < mass.length) {
     mass2 = mass2 + mass[i];
@@ -160,7 +163,7 @@ while (i < mass.length) {
 }
 console.log(mass2);*/
 /*let mass = [ 'a', 'b', 'c'];
-let mass2 = [];
+let mass2 = "";
 for (let i of mass) {
     mass2 = mass2 + i;
 }
