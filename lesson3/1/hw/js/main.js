@@ -131,13 +131,11 @@ console.log(arrayCar);*/
 
 /*- отримує текст з параграфа з id "content"*/
 /*let content = document.getElementById("content");
-console.log(content);*/
-/*let content = document.getElementsByTagName("p");
-console.log(content);*/
+console.log(content.textContent);*/
 
 /*- отримує текст з блоку з id "rules"*/
 /*let rules = document.getElementById("rules");
-console.log(rules);*/
+console.log(rules.textContent);*/
 
 /*- замініть текст параграфа з id 'content' на будь-який інший*/
 /*let content = document.getElementById("content");

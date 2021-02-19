@@ -1,10 +1,99 @@
 //- создать 5 объектов. В каждом объекте не менее 3х полей. Все объекты разные по набору полей. (Т.е поле name  должно присутствовать только 1 раз в одном объекте )
+
+let dog = { nickname : "boss", paw : 4, tail : "yes" }
+let man = { name : "Ferod", age : 24, eyes : "green" }
+let car = { carBrand : "Ford", fuel : "diesel", class : "sedan" }
+let apartment = { room : 4, floor : 3, area : 124 }
+let book = { title : "Book", author : "man", genre : "Trash" }
+
 //- создать 5 объектов с полностью разным набором полей. В каждом объекте должен присутсвовать массив и внутренний объект. Опишите что угодно, машину, картину, болт... Пример : let man = { name: 'kokos', skills : ['java','js'] , wife: { name: 'cherry' } };
+let dog2 = { nickname : "boss", paw : ["левая", "правая", "передняя", "задняя"], owner : { name : "Vasya", age: 22} }
+let man2 = { name : "Ferod", skills : ["js", "java", "python"], wife : {age : 21, work : "yes"} }
+let car2 = { carBrand : "Ford", fuel : ["diesel", "gas", "hybrid"], color : {sedan : "blue", hatchback : "red"} }
+let apartment2 = { room : {livingRoom : "yes"}, floor : [3, 4, 5], area : 124 }
+let book2 = { title : "Book", author : {name : "Calipso"}, genre : ["триллер", "детектив", "ужос"] }
+
 //- При помощи for in вывести все ключи всех объектов из задания 1 и 2
+/*for (let key in dog){console.log(key);};
+for (let key in man){console.log(key);};
+for (let key in car){console.log(key);};
+for (let key in apartment){console.log(key);};
+for (let key in book){console.log(key);};*/
+
+/*let allkey = [];
+    for (let key in dog2){ allkey.push(key);};
+console.log(allkey);
+let allkey2 = [];
+    for (let key in man2){allkey2.push(key);};
+console.log(allkey2);
+let allkey3 = [];
+    for (let key in car2){allkey3.push(key);};
+console.log(allkey3);
+let allkey4 = [];
+    for (let key in apartment2){allkey4.push(key);};
+console.log(allkey4);
+let allkey5 = [];
+    for (let key in book2){allkey5.push(key);};
+console.log(allkey5);*/
+/*for (let key in book2.author){ //абсолютно все ключи через костыль
+    for (let key2 in book2){
+        console.log(key2);}
+    console.log(key);
+};*/
+
+
 //- При помощи Object.keys вывести все ключи всех объектов из задания 1 и 2
+/*let keyDog = Object.keys(dog);
+console.log(keyDog);
+let keyMan = Object.keys(man);
+console.log(keyMan);
+let keyCar = Object.keys(car);
+console.log(keyCar);
+let keyApartment = Object.keys(apartment);
+console.log(keyApartment);
+let keyBook = Object.keys(book);
+console.log(keyBook);
+let keyDog2 = Object.keys(dog2);
+console.log(keyDog2);
+let keyMan2 = Object.keys(man2);
+console.log(keyMan2);
+let keyCar2 = Object.keys(car2);
+console.log(keyCar2);
+let keyApartment2 = Object.keys(apartment2);
+console.log(keyApartment2);
+let keyBook2 = Object.keys(book2);
+console.log(keyBook2);*/
+
 //- Создать массив из 10 объектов cars и заполнить его машинами с полями модель, год выпуска, мощность, цвет. (Значаения полей могу быть выдуманными)
+/*let cars = [
+    {model : "auto", age  : 2000, power : 1000, color : "red"},
+    {model : "auto2", age  : 2002, power : 1500, color : "blue"}, 
+    {model : "auto3", age  : 2004, power : 1600, color : "green"},
+    {model : "auto4", age  : 2006, power : 2100, color : "gold"},
+    {model : "auto5", age  : 2008, power : 2300, color : "grey"},
+    {model : "auto6", age  : 2010, power : 2500, color : "silver"},
+    {model : "auto7", age  : 2012, power : 3000, color : "skyblue"},
+    {model : "auto8", age  : 2014, power : 4000, color : "#3298f2"},
+    {model : "auto9", age  : 2016, power : 21000, color : "#333333"},
+    {model : "auto10", age  : 2018, power : 3500, color : "#ff9638"}
+];*/
+
 //- Создать массив объектов cities и заполнить его объектами с полями название, популяция, страна, регион. (Значаения полей могу быть выдуманными)
+/*let cities = [
+    {name : "Мечта", population : 5040, country : "Украина", region : "набокулежанщина"},
+    {name : "У моря", population : 873453, country : "Португалия", region : "для курящих"}, 
+    {name : "В гамаке", population : 2045304, country : "Словакия", region : "мест нет"},
+    {name : "Лежачий камень", population : 752, country : "Украина", region : "здесь был 'укажите имя'"},
+    {name : "Бокал пива", population : 457567, country : "Там где нас нет", region : "хороший"},
+    {name : "В руке", population : 4589565, country : "Германия", region : "могло быть и лучше"},
+    {name : "Ясный день", population : 2454512, country : "Украина", region : "неплохой"},
+    {name : "Лед", population : 12701, country : "Где трава зеленее", region : "лучше предыдущего"},
+    {name : "Креветки и крабы", population : 7807, country : "Польша", region : "фантазия слабая"},
+    {name : "ОК", population : 45674, country : "Украина", region : "у меня"}
+];*/
+
 //- Создать массив объектов cars и заполнить его машинами с полями модель, год выпуска, мощность, цвет, водитель. Водитель является отдельным объектом с полями имя, возраст, пол, стаж.
+
 //- проитерировать каждый массив из задания 5,6,7 при помощи while.
 //- проитерировать каждый массив из задания 5,6,7 при помощи for .
 //- проитерировать каждый массив из задания 5,6,7 при помощи  for of.
@@ -27,61 +116,61 @@
 //- За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement, розділивши всі властивості по своїм блокам , блок з адресою зробити окремим блоком, з блоками для кожної властивості
 
 /*            			let users = [{
-            				name: 'vasya',
-            				age: 31,
-            				status: false,
-            				address: {city: 'Lviv', country: 'Ukraine', street: 'Shevchenko', houseNumber: 1}
-            			}, {
-            				name: 'petya',
-            				age: 30,
-            				status: true,
-            				address: {city: 'New York', country: 'USA', street: 'East str', houseNumber: 21}
-            			}, {
-            				name: 'kolya',
-            				age: 29,
-            				status: true,
-            				address: {city: 'Budapest', country: 'Hungary', street: 'Kuraku', houseNumber: 78}
-            			}, {
-            				name: 'olya',
-            				age: 28,
-            				status: false,
-            				address: {city: 'Prague', country: 'Czech', street: 'Paster', houseNumber: 56}
-            			}, {
-            				name: 'max',
-            				age: 30,
-            				status: true,
-            				address: {city: 'Istanbul', country: 'Turkey', street: 'Mikar', houseNumber: 39}
-            			}, {
-            				name: 'anya',
-            				age: 31,
-            				status: false,
-            				address: {city: 'Rio', country: 'Brasil', street: 'Ronaldi', houseNumber: 5}
-            			}, {
-            				name: 'oleg',
-            				age: 28,
-            				status: false,
-            				address: {city: 'Montreal', country: 'Canada', street: 'Acusto', houseNumber: 90}
-            			}, {
-            				name: 'andrey',
-            				age: 29,
-            				status: true,
-            				address: {city: 'Quebeck', country: 'Canada', street: 'Binaro', houseNumber: 33}
-            			}, {
-            				name: 'masha',
-            				age: 30,
-            				status: true,
-            				address: {city: 'Moscow', country: 'Russia', street: 'Gogolia', houseNumber: 1}
-            			}, {
-            				name: 'olya',
-            				age: 31,
-            				status: false,
-            				address: {city: 'Portland', country: 'USA', street: 'Forest str', houseNumber: 4}
-            			}, {
-            				name: 'max',
-            				age: 31,
-            				status: true,
-            				address: {city: 'Cairo', country: 'Egypt', street: 'Seashore', houseNumber: 45}
-            			}];
+                            name: 'vasya',
+                            age: 31,
+                            status: false,
+                            address: {city: 'Lviv', country: 'Ukraine', street: 'Shevchenko', houseNumber: 1}
+                        }, {
+                            name: 'petya',
+                            age: 30,
+                            status: true,
+                            address: {city: 'New York', country: 'USA', street: 'East str', houseNumber: 21}
+                        }, {
+                            name: 'kolya',
+                            age: 29,
+                            status: true,
+                            address: {city: 'Budapest', country: 'Hungary', street: 'Kuraku', houseNumber: 78}
+                        }, {
+                            name: 'olya',
+                            age: 28,
+                            status: false,
+                            address: {city: 'Prague', country: 'Czech', street: 'Paster', houseNumber: 56}
+                        }, {
+                            name: 'max',
+                            age: 30,
+                            status: true,
+                            address: {city: 'Istanbul', country: 'Turkey', street: 'Mikar', houseNumber: 39}
+                        }, {
+                            name: 'anya',
+                            age: 31,
+                            status: false,
+                            address: {city: 'Rio', country: 'Brasil', street: 'Ronaldi', houseNumber: 5}
+                        }, {
+                            name: 'oleg',
+                            age: 28,
+                            status: false,
+                            address: {city: 'Montreal', country: 'Canada', street: 'Acusto', houseNumber: 90}
+                        }, {
+                            name: 'andrey',
+                            age: 29,
+                            status: true,
+                            address: {city: 'Quebeck', country: 'Canada', street: 'Binaro', houseNumber: 33}
+                        }, {
+                            name: 'masha',
+                            age: 30,
+                            status: true,
+                            address: {city: 'Moscow', country: 'Russia', street: 'Gogolia', houseNumber: 1}
+                        }, {
+                            name: 'olya',
+                            age: 31,
+                            status: false,
+                            address: {city: 'Portland', country: 'USA', street: 'Forest str', houseNumber: 4}
+                        }, {
+                            name: 'max',
+                            age: 31,
+                            status: true,
+                            address: {city: 'Cairo', country: 'Egypt', street: 'Seashore', houseNumber: 45}
+                        }];
 */
 
 //- Дано 2 масиви з рівною кількістю об'єктів.
