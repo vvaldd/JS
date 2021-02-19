@@ -1,17 +1,17 @@
 //- создать 5 объектов. В каждом объекте не менее 3х полей. Все объекты разные по набору полей. (Т.е поле name  должно присутствовать только 1 раз в одном объекте )
 
-let dog = { nickname : "boss", paw : 4, tail : "yes" }
-let man = { name : "Ferod", age : 24, eyes : "green" }
-let car = { carBrand : "Ford", fuel : "diesel", class : "sedan" }
-let apartment = { room : 4, floor : 3, area : 124 }
-let book = { title : "Book", author : "man", genre : "Trash" }
+/*let dog = {nickname : "boss", paw : 4, tail : "yes"}
+let man = {name : "Ferod", age : 24, eyes : "green"}
+let car = {carBrand : "Ford", fuel : "diesel", class : "sedan"}
+let apartment = {room : 4, floor : 3, area : 124}
+let book = {title : "Book", author : "man", genre : "Trash"}*/
 
 //- создать 5 объектов с полностью разным набором полей. В каждом объекте должен присутсвовать массив и внутренний объект. Опишите что угодно, машину, картину, болт... Пример : let man = { name: 'kokos', skills : ['java','js'] , wife: { name: 'cherry' } };
-let dog2 = { nickname : "boss", paw : ["левая", "правая", "передняя", "задняя"], owner : { name : "Vasya", age: 22} }
-let man2 = { name : "Ferod", skills : ["js", "java", "python"], wife : {age : 21, work : "yes"} }
-let car2 = { carBrand : "Ford", fuel : ["diesel", "gas", "hybrid"], color : {sedan : "blue", hatchback : "red"} }
-let apartment2 = { room : {livingRoom : "yes"}, floor : [3, 4, 5], area : 124 }
-let book2 = { title : "Book", author : {name : "Calipso"}, genre : ["триллер", "детектив", "ужос"] }
+/*let dog2 = {nickname : "boss", paw : ["левая", "правая", "передняя", "задняя"], owner : { name : "Vasya", age: 22}}
+let man2 = {name : "Ferod", skills : ["js", "java", "python"], wife : {age : 21, work : "yes"}}
+let car2 = {carBrand : "Ford", fuel : ["diesel", "gas", "hybrid"], color : {sedan : "blue", hatchback : "red"}}
+let apartment2 = { room : {livingRoom : "yes"}, floor : [3, 4, 5], area : 124}
+let book2 = {title : "Book", author : {name : "Calipso"}, genre : ["триллер", "детектив", "ужос"]}*/
 
 //- При помощи for in вывести все ключи всех объектов из задания 1 и 2
 /*for (let key in dog){console.log(key);};
@@ -65,7 +65,7 @@ let keyBook2 = Object.keys(book2);
 console.log(keyBook2);*/
 
 //- Создать массив из 10 объектов cars и заполнить его машинами с полями модель, год выпуска, мощность, цвет. (Значаения полей могу быть выдуманными)
-/*let cars = [
+let cars = [
     {model : "auto", age  : 2000, power : 1000, color : "red"},
     {model : "auto2", age  : 2002, power : 1500, color : "blue"}, 
     {model : "auto3", age  : 2004, power : 1600, color : "green"},
@@ -76,10 +76,10 @@ console.log(keyBook2);*/
     {model : "auto8", age  : 2014, power : 4000, color : "#3298f2"},
     {model : "auto9", age  : 2016, power : 21000, color : "#333333"},
     {model : "auto10", age  : 2018, power : 3500, color : "#ff9638"}
-];*/
+]
 
 //- Создать массив объектов cities и заполнить его объектами с полями название, популяция, страна, регион. (Значаения полей могу быть выдуманными)
-/*let cities = [
+let cities = [
     {name : "Мечта", population : 5040, country : "Украина", region : "набокулежанщина"},
     {name : "У моря", population : 873453, country : "Португалия", region : "для курящих"}, 
     {name : "В гамаке", population : 2045304, country : "Словакия", region : "мест нет"},
@@ -90,18 +90,107 @@ console.log(keyBook2);*/
     {name : "Лед", population : 12701, country : "Где трава зеленее", region : "лучше предыдущего"},
     {name : "Креветки и крабы", population : 7807, country : "Польша", region : "фантазия слабая"},
     {name : "ОК", population : 45674, country : "Украина", region : "у меня"}
-];*/
+]
 
 //- Создать массив объектов cars и заполнить его машинами с полями модель, год выпуска, мощность, цвет, водитель. Водитель является отдельным объектом с полями имя, возраст, пол, стаж.
-
+/*let cars2 = [
+    {model : "auto", age  : 2000, power : 1000, color : "red", driver : {name : "Ivan", age : 56, gender : "male", experience : 10}},
+    {model : "auto2", age  : 2002, power : 1500, color : "blue", driver : {name : "Katya", age : 26, gender : "female", experience : 0}}, 
+    {model : "auto3", age  : 2004, power : 1600, color : "green", driver : {name : "Kolya", age : 21, gender : "male", experience : 1}},
+    {model : "auto4", age  : 2006, power : 2100, color : "gold", driver : {name : "Olya", age : 28, gender : "female", experience : 8}},
+    {model : "auto5", age  : 2008, power : 2300, color : "grey", driver : {name : "Anna", age : 22, gender : "female", experience : 3}},
+    {model : "auto6", age  : 2010, power : 2500, color : "silver", driver : {name : "Ruslan", age : 30, gender : "male", experience : 10}},
+    {model : "auto7", age  : 2012, power : 3000, color : "skyblue", driver : {name : "Ivan", age : 56, gender : "male", experience : 10}},
+    {model : "auto8", age  : 2014, power : 4000, color : "#3298f2", driver : {name : "Vasya", age : 33, gender : "male", experience : 11}},
+    {model : "auto9", age  : 2016, power : 21000, color : "#333333", driver : {name : "Ivan", age : 27, gender : "male", experience : 2}},
+    {model : "auto10", age  : 2018, power : 3500, color : "#ff9638", driver : {name : "Dima", age : 45, gender : "male", experience : 26}}
+]
+*/
 //- проитерировать каждый массив из задания 5,6,7 при помощи while.
+/*let c = 0;
+let c2 = 0;
+let c3 = 0;
+while (const c < cars.length) {
+    console.log(cars[c]);
+    c++;
+}
+while (const c2 < cities.length) {
+    console.log(cities[c2]);
+    c2++;
+}
+while (const c3 < cars2.length) {
+    console.log(cars2[c3]);
+    c3++;
+}*/
+
 //- проитерировать каждый массив из задания 5,6,7 при помощи for .
+/*for (let c = 0; c < cars.length; c++) {
+    console.log(cars[c]);
+}
+for (let c2 = 0; c2 < cities.length; c2++) {
+    console.log(cities[c2]);
+}
+for (let c3 = 0; c3 < cars2.length; c3++) {
+    console.log(cars2[c3]);
+}*/
+
 //- проитерировать каждый массив из задания 5,6,7 при помощи  for of.
+/*for (let c of cars) {
+    console.log(c);
+}
+for (let c2 of cities) {
+    console.log(c2);
+}
+for (let c3 of cars2) {
+    console.log(c3);
+}*/
+//!!!не пойму почему в for of логаем переменную, а в while и for переменную с указанием массива
+
+
 //- взять объекты из задания 1 и превратить каждый в json.
+/*let jsDog = JSON.stringify(dog);
+let jsMan = JSON.stringify(man);
+let jsCar = JSON.stringify(car);
+let jsApartment = JSON.stringify(apartment);
+let jsBook = JSON.stringify(book);
+console.log(jsDog);
+console.log(jsMan);
+console.log(jsCar);
+console.log(jsApartment);
+console.log(jsBook);*/
+
 //- взять json из задания 11 и превратить их обратно в объекты.
+/*let jpDog = JSON.parse(jsDog);
+let jpMan = JSON.parse(jsMan);
+let jpCar = JSON.parse(jsCar);
+let jpApartment = JSON.parse(jsApartment);
+let jpBook = JSON.parse(jsBook);
+console.log(jpDog);
+console.log(jpMan);
+console.log(jpCar);
+console.log(jpApartment);
+console.log(jpBook);*/
+
 //- взять массив из задания 5,в цикле перебрать его объекты превратив их в json .
+/*for (let j of cars){
+    let jCars = j;
+    console.log(JSON.stringify(jCars));
+}
+
 //- взять массив из задания 6,в цикле перебрать его объекты превратив их в json .
+for (let j of cities){
+    let jCities = j;
+    console.log(JSON.stringify(jCities));
+}
 //- взять массив из задания 7,в цикле перебрать его объекты превратив их в json и сразу скоприовать в новый массив.
+let copy = [];
+for (let j of cars){
+    let jsCars = j;
+    let jpCars = JSON.stringify(jsCars);
+    copy.push(JSON.parse(jpCars));
+}
+console.log(copy);*/
+
 //- Создать массив пользователей. У каждого пользователя обязательно должено быть поле skills которое является массивом. Проитерировать массив пользователей и в каждом пользователе проитерировать его массив skills
 //- Создать массив пользователей. У каждого пользователя обязательно должено быть поле skills которое является массивом. Проитерировать массив пользователей и в каждом пользователе проитерировать его массив skills. Скопировать все skills всех пользователей в отедльный массив
 //
