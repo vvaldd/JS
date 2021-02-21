@@ -358,77 +358,124 @@ for (let c of classR) {
     console.log(c.textContent);
 }*/
 
-let tagN = document.getElementsByTagName("p");
+/*let tagN = document.getElementsByTagName("p");
 for (let t of tagN) {
     console.log(t.textContent);
-}
-
-
+}*/
 
 //- змінити цей текст використовуючи селектори id, class,  tag
+/*let id = document.getElementById("main_header");
+id.innerText = "змінити цей текст використовуючи селектор id";
+
+let classR = document.getElementsByClassName("sub-header");
+for (let c of classR) {
+    c.innerText = "змінити цей текст використовуючи селектор class";
+}
+
+let tagN = document.getElementsByTagName("p");
+for (let t of tagN) {
+    t.innerText = "змінити цей текст використовуючи селектор tag";
+}*/
+
+
 //- змінити висоту та ширину блоку використовуючи селектори id, class,  tag
+/*let id = document.getElementById("main_header");
+id.style.height = "100px";
+id.style.width = "500px";
+
+let classR = document.getElementsByClassName("sub-header");
+for (let c of classR) {
+    c.style.height = "50px";
+    c.style.width = "500px";
+}
+
+let tagN = document.getElementsByTagName("p");
+for (let t of tagN) {
+    t.style.height = "200px";
+    t.style.width = "500px";
+}*/
+
 //- за допомоги document.createElement та appendChild створити таблицю на 1 рядок з трьома ячейками всередені
+/*let table = document.createElement("table");
+let tr = document.createElement("tr");
+let td1 = document.createElement("td1");
+let td2 = document.createElement("td2");
+let td3 = document.createElement("td3");
+
+tr.appendChild(td1);
+tr.appendChild(td2);
+tr.appendChild(td3);
+
+table.appendChild(tr);
+
+document.body.appendChild(table);*/
+
 //- за допомоги document.createElement, appendChild та циклу створити таблицю на 10 рядків з трьома ячейками всередені
+/*let table = document.createElement("table");
+for (let i = 0; i < 10; i++){
+    let tr = document.createElement("tr");
+    
+    let td1 = document.createElement("td1");
+    let td2 = document.createElement("td2");
+    let td3 = document.createElement("td3");
+
+    tr.appendChild(td1);
+    tr.appendChild(td2);
+    tr.appendChild(td3);
+
+    table.appendChild(tr);
+};
+
+document.body.appendChild(table);/*
+
 //- за допомоги document.createElement, appendChild та 2х циклів створити таблицю на 10 рядків з 5 ячейками всередені
+
+/*let table = document.createElement("table");
+for (let i = 0; i < 10; i++){
+    let tr = document.createElement("tr");
+    for (let i = 0; i < 5; i++){
+        let td = document.createElement("td");
+        tr.appendChild(td);
+    }
+    table.appendChild(tr);
+}
+
+document.body.appendChild(table);*/
+
 //- за допомоги document.createElement, appendChild та 2х циклів створити таблицю на n рядків з m ячейками всередені. n та m отримати з prompt
-//
+
+/*let n = prompt("кількість рядів");
+let m = prompt("кількість ячейок");
+let table = document.createElement("table");
+for (let i = 0; i < n; i++){
+    let tr = document.createElement("tr");
+    for (let i = 0; i < m; i++){
+        let td = document.createElement("td");
+        tr.appendChild(td);
+    }
+    table.appendChild(tr);
+}
+
+document.body.appendChild(table);*/
+
+
 //--Завантажити з мережі будь-який шаблон сайту. Підключити до нього свій скріпт-файл. У файлі прописати наступні доступи та дії
 // - знайти всі елементі, які мають class
+/*const classN = document.getElementsByTagName("*");
+for (let c of classN) {
+    if(c.getAttribute("class")){
+        console.log(c);
+    };
+}*/
+
 // - знайти всі параграфи ,та змінити текст на hello oktenweb!
+/*const p = document.getElementsByTagName("p");
+for (let i of p) {
+    i.innerText = "hello oktenweb!";
+}*/
+
 // - знайти всі div та змінити ім колір на червоний
-//
-//============
-//====class===
-//============
-//
-//- є сторінка rules.html. Контентом сторінки є заголовки та параграфи. Заголовки (h2) характеризують тему контенту яка вказана в параграфі.
-//створити скрипт, котрий зчитує всі заголовки, та робить в блоці з id=content з них список(ul>li), який буде змістом того, що знаходиться на сторінці.
-//Скріпт повинен працювати навіть якщо кількість блоків з заголовком та параграфом зміниться.
-//
-//-Є масив котрий характеризує правила. Створити скрипт який ітерує цей масив, та робить з кожне правило в окремому блоці.
-//При цому в блоці, номер правила записати в свій блок, текст правила записати в свій окремий блок.
-//Результатом відпрацювання скріпта повинна бути структура яка міститься в блоці wrap файла rule.html
-//
-//			let rules = [
-//				{
-//					title: 'Первое правило Бойцовского клуба.',
-//					body: 'Никому не рассказывать о Бойцовском клубе.'
-//				},
-//				{
-//					title: 'Второе правило Бойцовского клуба.',
-//					body: 'Никогда никому не рассказывать о Бойцовском клубе.'
-//				},
-//				{
-//					title: 'Третье правило Бойцовского клуба.',
-//					body: 'В схватке участвуют только двое.'
-//				},
-//				{
-//					title: 'Четвертое правило Бойцовского клуба.',
-//					body: 'Не более одного поединка за один раз.'
-//				},
-//				{
-//					title: 'Пятое правило Бойцовского клуба.',
-//					body: 'Бойцы сражаются без обуви и голые по пояс.'
-//				},
-//				{
-//					title: 'Шестое правило Бойцовского клуба.',
-//					body: 'Поединок продолжается столько, сколько потребуется.'
-//				},
-//				{
-//					title: 'Седьмое правило Бойцовского клуба.',
-//					body: 'Если противник потерял сознание или делает вид, что потерял, или говорит «Хватит» — поединок окончен.'
-//				},
-//				{
-//					title: 'Восьмое и последнее правило Бойцовского клуба.',
-//					body: 'Новичок обязан принять бой.'
-//				},
-//
-//			];
-//
-//
-//
-//
-//*** за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі users. За допомогою document.createElement вивести їх в браузер. Помістити кожен окремий об'єкт в блок, при цьому кожен внутрішній об'єкт в свій блок (блок в блоці).
-//*** за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі posts. За допомогою document.createElement вивести їх в браузер. Помістити кожен окремий об'єкт в блок, при цьому кожен внутрішній об'єкт(якщо він існує) в свій блок (блок в блоці).
-//*** за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі comments. За допомогою document.createElement вивести їх в браузер. Помістити кожен окремий об'єкт в блок, при цьому кожен внутрішній об'єкт(якщо він існує) в свій блок (блок в блоці).
-//****** при помощи fetch (как в примере) получить от jsonplaceholder все posts. Внутри последнего then() сделать еще один fetch который сделает запрос и получит все comments. Объеденить соответсвующий post с соответсвующими comment и вывести в браузер. Подсказка : в каждом comment есть поле postId которое определяет какой комментарий принадлежит какому посту
+/*const d = document.getElementsByTagName("div");
+for (let i of d) {
+    i.style.color = "red";//i.style.background = "red";
+}*/
