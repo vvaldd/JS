@@ -65,32 +65,32 @@ let keyBook2 = Object.keys(book2);
 console.log(keyBook2);*/
 
 //- Создать массив из 10 объектов cars и заполнить его машинами с полями модель, год выпуска, мощность, цвет. (Значаения полей могу быть выдуманными)
-let cars = [
-    {model : "auto", age  : 2000, power : 1000, color : "red"},
-    {model : "auto2", age  : 2002, power : 1500, color : "blue"}, 
-    {model : "auto3", age  : 2004, power : 1600, color : "green"},
-    {model : "auto4", age  : 2006, power : 2100, color : "gold"},
-    {model : "auto5", age  : 2008, power : 2300, color : "grey"},
-    {model : "auto6", age  : 2010, power : 2500, color : "silver"},
-    {model : "auto7", age  : 2012, power : 3000, color : "skyblue"},
-    {model : "auto8", age  : 2014, power : 4000, color : "#3298f2"},
-    {model : "auto9", age  : 2016, power : 21000, color : "#333333"},
-    {model : "auto10", age  : 2018, power : 3500, color : "#ff9638"}
-]
+// let cars = [
+//     {model : "auto", age  : 2000, power : 1000, color : "red"},
+//     {model : "auto2", age  : 2002, power : 1500, color : "blue"}, 
+//     {model : "auto3", age  : 2004, power : 1600, color : "green"},
+//     {model : "auto4", age  : 2006, power : 2100, color : "gold"},
+//     {model : "auto5", age  : 2008, power : 2300, color : "grey"},
+//     {model : "auto6", age  : 2010, power : 2500, color : "silver"},
+//     {model : "auto7", age  : 2012, power : 3000, color : "skyblue"},
+//     {model : "auto8", age  : 2014, power : 4000, color : "#3298f2"},
+//     {model : "auto9", age  : 2016, power : 21000, color : "#333333"},
+//     {model : "auto10", age  : 2018, power : 3500, color : "#ff9638"}
+// ]
 
-//- Создать массив объектов cities и заполнить его объектами с полями название, популяция, страна, регион. (Значаения полей могу быть выдуманными)
-let cities = [
-    {name : "Мечта", population : 5040, country : "Украина", region : "набокулежанщина"},
-    {name : "У моря", population : 873453, country : "Португалия", region : "для курящих"}, 
-    {name : "В гамаке", population : 2045304, country : "Словакия", region : "мест нет"},
-    {name : "Лежачий камень", population : 752, country : "Украина", region : "здесь был 'укажите имя'"},
-    {name : "Бокал пива", population : 457567, country : "Там где нас нет", region : "хороший"},
-    {name : "В руке", population : 4589565, country : "Германия", region : "могло быть и лучше"},
-    {name : "Ясный день", population : 2454512, country : "Украина", region : "неплохой"},
-    {name : "Лед", population : 12701, country : "Где трава зеленее", region : "лучше предыдущего"},
-    {name : "Креветки и крабы", population : 7807, country : "Польша", region : "фантазия слабая"},
-    {name : "ОК", population : 45674, country : "Украина", region : "у меня"}
-]
+// //- Создать массив объектов cities и заполнить его объектами с полями название, популяция, страна, регион. (Значаения полей могу быть выдуманными)
+// let cities = [
+//     {name : "Мечта", population : 5040, country : "Украина", region : "набокулежанщина"},
+//     {name : "У моря", population : 873453, country : "Португалия", region : "для курящих"}, 
+//     {name : "В гамаке", population : 2045304, country : "Словакия", region : "мест нет"},
+//     {name : "Лежачий камень", population : 752, country : "Украина", region : "здесь был 'укажите имя'"},
+//     {name : "Бокал пива", population : 457567, country : "Там где нас нет", region : "хороший"},
+//     {name : "В руке", population : 4589565, country : "Германия", region : "могло быть и лучше"},
+//     {name : "Ясный день", population : 2454512, country : "Украина", region : "неплохой"},
+//     {name : "Лед", population : 12701, country : "Где трава зеленее", region : "лучше предыдущего"},
+//     {name : "Креветки и крабы", population : 7807, country : "Польша", region : "фантазия слабая"},
+//     {name : "ОК", population : 45674, country : "Украина", region : "у меня"}
+// ]
 
 //- Создать массив объектов cars и заполнить его машинами с полями модель, год выпуска, мощность, цвет, водитель. Водитель является отдельным объектом с полями имя, возраст, пол, стаж.
 /*let cars2 = [
