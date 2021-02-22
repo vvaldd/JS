@@ -468,6 +468,13 @@ for (let c of classN) {
     };
 }*/
 
+// const classN = document.querySelectorAll("*");
+// for (let c of classN) {
+//     if(c.getAttribute("class")){
+//         console.log(c);
+//     };
+// }
+
 // - знайти всі параграфи ,та змінити текст на hello oktenweb!
 /*const p = document.getElementsByTagName("p");
 for (let i of p) {
