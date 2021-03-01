@@ -1,8 +1,15 @@
 // - создать массив с 20 числами.
-//let array = [34, 26, 88, 43, 56, 21, 67, 94, 47, 990, 384, 931, 24, 3, 400, 82, 21, 7, 15, 20];
+let array = [34, 26, 88, 43, 56, 21, 67, 94, 47, 990, 384, 931, 24, 3, 400, 82, 21, 7, 15, 20];
 
 // -- при помощи метода sort и колбека  отсортировать массив.
 // -- при помощи метода sort и колбека отсортировать массив в ниспадающем напралении.
+Array.prototype.sortArray = function (callbackFn) {
+    callbackFn(element);
+};
+array.sortArray((a, b)=> {
+    return a-b;
+});
+console.log(array);
 // console.log(array);
 // array.sort ((a, b)=>a-b);
 // console.log(array);
