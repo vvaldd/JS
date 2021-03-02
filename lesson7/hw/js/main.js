@@ -93,7 +93,16 @@
 // document.body.appendChild(div);
 // menu();
 
-// - створити 2 форми  по 2 інпути в кожній. ствоирити кнопку при кліку на яку считується та виводиться на консоль інформація з цих 2х форм.
+// PROCESSING- створити 2 форми  по 2 інпути в кожній. ствоирити кнопку при кліку на яку считується та виводиться на консоль інформація з цих 2х форм.
+// let btnGo = document.getElementById("btn");
+// btnGo.onclick = () => {
+//     let inputs = document.getElementsByTagName("input");
+//     let name = inputs[0].value;
+//     let age = inputs[1].value;
+//     let user = {name, age};
+//     console.log(user);
+    
+}
 
 
 // Кнопка повинна лежати за межами форм (Щоб ьуникнути  перезавантаження сторінки)
