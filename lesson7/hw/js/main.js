@@ -60,6 +60,51 @@
 // }
 // comm(comment);
 
+// - Создайте меню, которое раскрывается/сворачивается при клике
+
+// let div = document.createElement("div");
+// let menu = () => {
+//     let button = document.createElement("button");
+//     let menuUl = document.createElement("ul");
+//     let menuL1 = document.createElement("li");
+//     let menuL2 = document.createElement("li");
+//     let menuL3 = document.createElement("li");
+    
+//     button.innerText = "Скрыть/Показать меню";
+//     menuUl.innerText = "Меню";
+//     menuL1.innerText = "Первые блюда";
+//     menuL2.innerText = "Гарнир";
+//     menuL3.innerText = "Десерт";
+    
+
+//     button.onclick = () => {
+//         menuUl.hidden
+//             ? menuUl.hidden = false
+//                 : menuUl.hidden = true;
+//     };
+
+//     div.appendChild(button);
+//     div.appendChild(menuUl);
+//     menuUl.appendChild(menuL1);
+//     menuUl.appendChild(menuL2);
+//     menuUl.appendChild(menuL3);
+    
+// };
+// document.body.appendChild(div);
+// menu();
+
+// - створити 2 форми  по 2 інпути в кожній. ствоирити кнопку при кліку на яку считується та виводиться на консоль інформація з цих 2х форм.
+
+
+// Кнопка повинна лежати за межами форм (Щоб ьуникнути  перезавантаження сторінки)
+// Доступ до інпутів через Forms API. Отже дайте формі та інпутам всі необхідні атрибути.
+// - Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
+// При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
+// (Додатковачастина для завдання)
+
+
+
+
 
 // ***- Сворити масив не цензцрних слів.
 // Сворити інпут текстового типу.
@@ -69,25 +114,26 @@
 
 // !!!!!!
 
-let arrayMat = ["хрень", "одух", "идиот", "кретин", "придурок"];
-let btnGo = document.getElementById("go");
-btnGo.addEventListener("click", () => {
-    let word = document.getElementsByTagName("input");
-    console.log(word[0].value);
-    return word[0].value;
+// let arrayMat = ["хрень", "одух", "идиот", "кретин", "придурок"];
+// let btnGo = document.getElementById("go");
+// btnGo.addEventListener("click", () => {
+//     let word = document.getElementsByTagName("input");
+//     console.log(word[0].value);
+//     return word[0].value;
     
-    // arrayMat.forEach(element => { console.log(elemet.value);
-    // element.value === word[0].value.toLowerCase() ? alert("Не ругайся!") : alert("Проверка пройдена");
+//     // arrayMat.forEach(element => { console.log(elemet.value);
+//     // element.value === word[0].value.toLowerCase() ? alert("Не ругайся!") : alert("Проверка пройдена");
 
-    // });
-})
+//     // });
+// })
 
-btnGo.addEventListener ("click", arrayMat.forEach(value => {
-    if(value === word[0].value){
-        alert("Не ругайся!")
-    } else {
-        alert("Проверка пройдена");
-    }
-}));
+// btnGo.addEventListener ("click", arrayMat.forEach(value => {
+//     if(value === word[0].value){
+//         alert("Не ругайся!")
+//     } else {
+//         alert("Проверка пройдена");
+//     }
+// }));
+
     
 
