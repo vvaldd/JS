@@ -94,22 +94,55 @@
 // menu();
 
 // PROCESSING- створити 2 форми  по 2 інпути в кожній. ствоирити кнопку при кліку на яку считується та виводиться на консоль інформація з цих 2х форм.
-// let btnGo = document.getElementById("btn");
-// btnGo.onclick = () => {
-//     let inputs = document.getElementsByTagName("input");
-//     let name = inputs[0].value;
-//     let age = inputs[1].value;
-//     let user = {name, age};
-//     console.log(user);
-    
-}
-
-
 // Кнопка повинна лежати за межами форм (Щоб ьуникнути  перезавантаження сторінки)
 // Доступ до інпутів через Forms API. Отже дайте формі та інпутам всі необхідні атрибути.
+
+// let btnGo = document.getElementById("btn");
+// let in1 = document.getElementById("name1");
+// let in2 = document.getElementById("age1");
+// let in3 = document.getElementById("name1_2");
+// let in4 = document.getElementById("age1_2");
+// btnGo.onclick = () => {
+//     // let inputs = document.getElementsByTagName("input");
+//     // let name = inputs[0].value;
+//     // let age = inputs[1].value;
+//     // let user = {name, age};
+//     // console.log(in1.value);
+//     // console.log(in2.value);
+//     // console.log(in3.value);
+//     // console.log(in4.value);
+   
+// }
+
+
+
+
 // - Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
 // При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
-// (Додатковачастина для завдання)
+
+let div = document.createElement("div");
+let btnGo = document.getElementById("btn");
+let inR = document.getElementById("inR");
+let inC = document.getElementById("inC");
+let inT = document.getElementById("inT");
+console.log(inR.value, inC.value, inT.value);
+
+
+btnGo.onclick = (inR, inC, inT) => {
+    let table = document.createElement("table");
+    for (let i = 0; i < inR.value; i++){
+        let tr = document.createElement("tr");
+        for (let j = 0; j < inC.value; i++){
+            let td = document.createElement("td");
+            tr.innerText = inT;
+            tr.appendChild(td);
+        };
+        table.appendChild(tr);
+    };
+    
+    div.appendChild(table);
+}
+document.body.appendChild(div);
 
 
 
