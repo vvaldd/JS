@@ -120,30 +120,30 @@
 // - Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
 // При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 
-let div = document.createElement("div");
-let btnGo = document.getElementById("btn");
-let inR = document.getElementById("inR");
-let inC = document.getElementById("inC");
-let inT = document.getElementById("inT");
-console.log(inR.value, inC.value, inT.value);
+// let div = document.createElement("div");
+// let btnGo = document.getElementById("btn");
+// let inR = document.getElementById("inR");
+// let inC = document.getElementById("inC");
+// let inT = document.getElementById("inT");
+// console.log(inR.value, inC.value, inT.value);
 
 
-btnGo.onclick = (inR, inC, inT) => {
-    let table = document.createElement("table");
+// btnGo.onclick = () => {
+//     let table = document.createElement("table");
 
-        for (let i = 0; i < inR.value; i++){
-            let tr = document.createElement("tr");
-            for (let j = 0; j < inC.value; i++){
-                let td = document.createElement("td");
-                td.innerText = inT;
-                tr.appendChild(td);
-            };
-            table.appendChild(tr);
-        };
+//         for (let i = 0; i < inR.value; i++){
+//             let tr = document.createElement("tr");
+//             for (let j = 0; j < inC.value; j++){
+//                 let td = document.createElement("td");
+//                 td.innerText = inT.value;
+//                 tr.appendChild(td);
+//             };
+//             table.appendChild(tr);
+//         };
     
-    div.appendChild(table);
-}
-document.body.appendChild(div);
+//     div.appendChild(table);
+// }
+// document.body.appendChild(div);
 
 
 
@@ -155,28 +155,17 @@ document.body.appendChild(div);
 // кинути алерт з попередженням.
 // Перевірку робити при натисканні на кнопку
 
-// !!!!!!
 
-// let arrayMat = ["хрень", "одух", "идиот", "кретин", "придурок"];
-// let btnGo = document.getElementById("go");
-// btnGo.addEventListener("click", () => {
-//     let word = document.getElementsByTagName("input");
-//     console.log(word[0].value);
-//     return word[0].value;
-    
-//     // arrayMat.forEach(element => { console.log(elemet.value);
-//     // element.value === word[0].value.toLowerCase() ? alert("Не ругайся!") : alert("Проверка пройдена");
+let arrayMat = ["хрень", "одух", "идиот", "кретин", "придурок"];
+let btnGo = document.getElementById("go");
+btnGo.onclick = arrayMat.forEach(element => { console.log(elemet.value);
+    lement.value === word[0].value.toLowerCase() ? alert("Не ругайся!") : alert("Проверка пройдена");
 
-//     // });
-// })
+});
 
-// btnGo.addEventListener ("click", arrayMat.forEach(value => {
-//     if(value === word[0].value){
-//         alert("Не ругайся!")
-//     } else {
-//         alert("Проверка пройдена");
-//     }
-// }));
+
+// 
+
 
     
 
