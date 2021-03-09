@@ -130,15 +130,16 @@ console.log(inR.value, inC.value, inT.value);
 
 btnGo.onclick = (inR, inC, inT) => {
     let table = document.createElement("table");
-    for (let i = 0; i < inR.value; i++){
-        let tr = document.createElement("tr");
-        for (let j = 0; j < inC.value; i++){
-            let td = document.createElement("td");
-            tr.innerText = inT;
-            tr.appendChild(td);
+
+        for (let i = 0; i < inR.value; i++){
+            let tr = document.createElement("tr");
+            for (let j = 0; j < inC.value; i++){
+                let td = document.createElement("td");
+                td.innerText = inT;
+                tr.appendChild(td);
+            };
+            table.appendChild(tr);
         };
-        table.appendChild(tr);
-    };
     
     div.appendChild(table);
 }
