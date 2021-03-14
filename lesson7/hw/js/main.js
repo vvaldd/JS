@@ -156,18 +156,13 @@
 // Перевірку робити при натисканні на кнопку
 
 
-let arrayMat = ["хрень", "олух", "идиот", "кретин", "придурок"];
-let btnGo = document.getElementById("go");
-let input = document.getElementById("myinput");
-btnGo.onclick = () => {
-    
-    for (let i of arrayMat) {
-        if (i === input.value.toLowerCase()){
-            alert("Не ругайся!");
-            break;
-        } else {
-            alert("Проверка пройдена");
-        }
-        
-    }
-};
+// let arrayMat = ["хрень", "олух", "идиот", "кретин", "придурок"];
+// let btnGo = document.getElementById("go");
+// let input = document.getElementById("myinput");
+// btnGo.onclick = () => {
+//     arrayMat.forEach(value=>{
+//         if (value === input.value.toLowerCase()){
+//             alert("Не ругайся!");
+//         };
+//     });
+// };
